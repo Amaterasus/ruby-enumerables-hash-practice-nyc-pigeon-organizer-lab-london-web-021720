@@ -8,6 +8,11 @@ def nyc_pigeon_organizer(data)
         if !output[name]
           output[name] = {attribute => []}
         end
+        
+        if !output[name][attribute]
+          output[name][attribute] = []
+        end
+        
         output[name][attribute].push(nested_attribute)
       end
     end
