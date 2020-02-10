@@ -5,7 +5,7 @@ def nyc_pigeon_organizer(data)
   data.each do |attribute|
     attribute.each do |nested_attribute , names|
       names.each do |name|
-        output =
+        output[name] = {attribute => [nested_attribute]}
       end
     end
   end
