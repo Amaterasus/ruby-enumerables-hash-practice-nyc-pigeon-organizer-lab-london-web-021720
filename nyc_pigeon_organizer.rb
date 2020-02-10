@@ -3,7 +3,9 @@ def nyc_pigeon_organizer(data)
   output = {}
   
   data.each |attribute| do
-    attribute.each |
+    attribute.each |nested_attribute , name| do
+      
+    end
   end
   
   return output
