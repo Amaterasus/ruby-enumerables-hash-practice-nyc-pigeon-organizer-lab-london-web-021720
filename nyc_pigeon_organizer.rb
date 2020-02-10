@@ -13,7 +13,7 @@ def nyc_pigeon_organizer(data)
           output[name][attribute] = []
         end
         
-        output[name][attribute].push(nested_attribute)
+        output[name][attribute].push(nested_attribute.to_s)
       end
     end
   end
